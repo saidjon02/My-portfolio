@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../../imgs/logo.png";
-import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header container-h font">
       <div className="head-left">
         <img className="logo" src={logo} alt="" />
+        <i class="bx bx-menu"></i>
       </div>
       <div className="head-right">
         <p className="head-link">

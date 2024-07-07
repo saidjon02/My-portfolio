@@ -2,8 +2,36 @@ import React from "react";
 import { Link } from "react-router-dom";
 import right from "../../imgs/right.png";
 import img from "../../imgs/aImg.png";
+import img1 from "../../imgs/halcyon.avif";
+import img2 from "../../imgs/img3.png";
+import img3 from "../../imgs/hero 1 (1).png";
+import img4 from "../../imgs/img4.png";
+
+import "./app.js";
 
 function Home() {
+  // let post11 = document.querySelector(".post1");
+  // let post22 = document.querySelector(".post2");
+  // let post33 = document.querySelector(".post3");
+  // let post44 = document.querySelector(".post4");
+  // let post55 = document.querySelector(".post5");
+  // const post1 = () => {
+  //   post11.style.opacity = 1;
+  //   post22.style.opacity = 0;
+  //   post33.style.opacity = 0;
+  //   post44.style.opacity = 0;
+  //   post55.style.opacity = 0;
+  // };
+  // const post2 = () => {
+  //   post11.style.opacity = 0;
+  //   post22.style.opacity = 1;
+  //   post33.style.opacity = 0;
+  //   post44.style.opacity = 0;
+  //   post55.style.opacity = 0;
+  // };
+  // const post3 = () => {};
+  // const post4 = () => {};
+  // const post5 = () => {};
   return (
     <div className="wrap">
       <div className="home container">
@@ -37,9 +65,9 @@ function Home() {
             </p>
             <p className="texts mt">
               Contact me and I will make you a big and beautiful website. It
-              needs <span className="green">website information</span>,{" "}
-              <span className="green">images</span> and{" "}
-              <span className="green">website logo</span>
+              needs <span className="green"> website information </span>,
+              <span className="green"> images </span> and
+              <span className="green"> website logo</span>
             </p>
             <p className="texts mt">
               I recently joined Apinline. And I am working with that company.
@@ -82,9 +110,397 @@ function Home() {
           <span className="green font">02. </span> Where I’ve Worked
         </h1>
         <div className="work-row">
-          <div className="work-left"></div>
-          <div className="work-right"></div>
+          <div className="work-left">
+            <h2 className="work-left-title active-work">
+              Apinline
+              {/* onClick={post1()} */}
+            </h2>
+            <h2 className="work-left-title">
+              Apple
+              {/* onClick={post2()} */}
+            </h2>
+            <h2 className="work-left-title">
+              Scout Studio
+              {/* onClick={post3()} */}
+            </h2>
+            <h2 className="work-left-title">
+              Starry
+              {/* onClick={post4()} */}
+            </h2>
+            <h2 className="work-left-title">
+              MullenLowe
+              {/* onClick={post5()} */}
+            </h2>
+          </div>
+          <div className="work-right">
+            <div className="post1">
+              <h2 className="work-right-title">
+                Lead Engineer <span className="green">@ Apinline</span>
+              </h2>
+              <p className="work-text">May 2018 - Present</p>
+              <p className="texts mb20">
+                <img src={right} className="imgs-right" alt="" />
+                Deliver high-quality, robust production code for a diverse array
+                of projects for clients including Harvard Business School,
+                Everytown for Gun Safety, Pratt Institute, Koala Health,
+                Vanderbilt University, The 19th News, and more
+              </p>
+              <p className="texts mb20">
+                <img src={right} className="imgs-right" alt="" />
+                Work alongside creative directors to lead the research,
+                development, and architecture of technical solutions to fulfill
+                business requirements
+              </p>
+              <p className="texts mb20">
+                <img src={right} className="imgs-right" alt="" />
+                Collaborate with designers, project managers, and other
+                engineers to transform creative concepts into production
+                realities for clients and stakeholders
+              </p>
+              <p className="texts mb20">
+                <img src={right} className="imgs-right" alt="" />
+                Provide leadership within engineering department through close
+                collaboration, knowledge shares, and mentorship
+              </p>
+            </div>
+            <div className="post2 posts">
+              <h2 className="work-right-title">
+                UI Engineer Co-op <span className="green"> @ Apple</span>
+              </h2>
+              <p className="work-text">July - December 2017</p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Developed and styled interactive web applications for Apple
+                Music using Ember and SCSS
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Built and shipped the Apple Music Extension for Facebook
+                Messenger leveraging third-party and internal API integrations
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Architected and implemented the user interface of Apple Music's
+                embeddable web player widget for in-browser user authorization
+                and full song playback
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Contributed extensively to the creation of MusicKit JS, a
+                public-facing JavaScript SDK for embedding Apple Music players
+                into web applications
+              </p>
+            </div>
+            <div className="post3 posts">
+              <h2 className="work-right-title">
+                Developer
+                <span className="green"> @ Scout Studio</span>
+              </h2>
+              <p className="work-text">Spring 2016 & 2017</p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Collaborated with other student designers and engineers on
+                pro-bono projects to create new brands, design systems, and
+                websites for organizations in the community
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Built and delivered technical solutions according to stakeholder
+                business requirements
+              </p>
+            </div>
+            <div className="post4 posts">
+              <h2 className="work-right-title">
+                Software Engineer Co-op
+                <span className="green"> @ Starry</span>
+              </h2>
+              <p className="work-text">July - December 2016</p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Engineered and improved major features of Starry's
+                customer-facing Android web app using ES6, Handlebars, Backbone,
+                Marionette, and CSS
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Proposed and implemented scalable solutions to issues identified
+                with cloud services and applications responsible for
+                communicating with the Starry Station internet router
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Collaborated with designers and other developers to ensure
+                thoughtful and consistent user experiences across Starry’s iOS
+                and Android mobile apps
+              </p>
+            </div>
+            <div className="post5 posts">
+              <h2 className="work-right-title">
+                Creative Technologist Co-op
+                <span className="green"> @ MullenLowe</span>
+              </h2>
+              <p className="work-text">July - December 2015</p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Developed, maintained, and shipped production code for client
+                websites primarily using HTML, CSS, Sass, JavaScript, and jQuery
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Performed quality assurance tests on various sites to ensure
+                cross-browser compatibility and mobile responsiveness
+              </p>
+              <p className="texts">
+                <img src={right} className="imgs-right" alt="" />
+                Clients included JetBlue, Lovesac, U.S. Cellular, U.S.
+                Department of Defense, and more
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="built container">
+        <h1 className="about-title">
+          <span className="green font">03. </span> Some Things I’ve Built
+        </h1>
+        <div className="b-row">
+          <div className="b-left bg">
+            <img src={img1} alt="" />
+          </div>
+          <div className="b-right">
+            <h2 className="b-title">Featured Project</h2>
+            <h2 className="b-subtitle">Halcyon Theme</h2>
+            <div className="b-card">
+              <p className="b-card-text">
+                A minimal, dark blue theme for VS Code, Sublime Text, Atom,
+                iTerm, and more. Available on
+                <span className="green">
+                  
+                  Visual Studio Marketplace, Control, Atom Package Manager,
+                </span>
+                Package and <span className="green"> npm.</span>
+              </p>
+            </div>
+            <div className="programs">
+              <p className="b-text">VS Code</p>
+              <p className="b-text">Sublime Text</p>
+              <p className="b-text">Atom</p>
+              <p className="b-text">iTerm2</p>
+              <p className="b-text">Hyper</p>
+            </div>
+            <div className="b-box-icon">
+              <i class="progra cursor bx bxl-github"></i>
+              <i class="progra cursor bx bx-link-external"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="built container">
+        <div className="b-row">
+          <div className="b-right ral">
+            <h2 className="b-title">Featured Project</h2>
+            <h2 className="b-subtitle">Spotify Profile</h2>
+            <div className="b-card">
+              <p className="b-card-text">
+                A web app for visualizing personalized Spotify data. View your
+                top artists, top tracks, recently played tracks, and detailed
+                audio information about each track. Create and save new
+                playlists of recommended tracks based on your existing playlists
+                and more.
+              </p>
+            </div>
+            <div className="programs2">
+              <p className="b-text">React</p>
+              <p className="b-text">Styled Components</p>
+              <p className="b-text">Express</p>
+              <p className="b-text dn">Spotify API</p>
+              <p className="b-text dn">Heroku</p>
+            </div>
+            <div className="b-box-icon2">
+              <i class="progra cursor bx bxl-github"></i>
+              <i class="progra cursor bx bx-link-external"></i>
+            </div>
+          </div>
+          <div className="b-left bg">
+            <img src={img2} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="built container">
+        <div className="b-row">
+          <div className="b-left">
+            <img src={img3} alt="" />
+          </div>
+          <div className="b-right">
+            <h2 className="b-title">Featured Project</h2>
+            <h2 className="b-subtitle">Build a Spotify Connected App</h2>
+            <div className="b-card">
+              <p className="b-card-text">
+                Having struggled with understanding how the Spotify OAuth flow
+                works, I made the course I wish I could have had. Unlike
+                tutorials that only cover a few concepts and leave you with
+                half-baked GitHub repositories. <span className="dn"> This course covers everything
+                from explaining the principles of REST APIs to implementing
+                Spotify's OAuth flow and fetching API data in a React app.  By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio. </span>
+              </p>
+            </div>
+            <div className="programs">
+              <p className="b-text">Reactt</p>
+              <p className="b-text">Express</p>
+              <p className="b-text">Spotify API</p>
+              <p className="b-text">Styled Components</p>
+            </div>
+            <div className="b-box-icon">
+              <i class="progra cursor bx bxl-github"></i>
+              <i class="progra cursor bx bx-link-external"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pro container">
+        <h2 className="pro-title tac fz35">Other Noteworthy Projects</h2>
+        <p className="tac green">view the archive</p>
+        <div className="pro-row mt50">
+          <div className="pro-card">
+            <div className="pro-card-row">
+              <img src={img4} className="bx-folder" alt="" />
+              <div className="pro-card-icons">
+                <i class="progra cursor bx bxl-github"></i>
+                <i class="progra cursor bx bx-link-external"></i>
+              </div>
+            </div>
+            <h2 className="pro-card-title">
+              Integrating Algolia Search with WordPress Multisite
+            </h2>
+            <p className="pro-card-text">
+              Building a custom multisite compatible WordPress plugin to build
+              global search with Algolia
+            </p>
+            <div className="pro-card-row2">
+              <p className="pro-programs">Algolia</p>
+              <p className="pro-programs">WordPress</p>
+              <p className="pro-programs">PHP</p>
+            </div>
+          </div>
+          <div className="pro-card">
+            <div className="pro-card-row">
+              <img src={img4} className="bx-folder" alt="" />
+              <div className="pro-card-icons">
+                <i class="progra cursor bx bxl-github"></i>
+                <i class="progra cursor bx bx-link-external"></i>
+              </div>
+            </div>
+            <h2 className="pro-card-title">Time to Have More Fun</h2>
+            <p className="pro-card-text">
+              A single page web app for helping me choose where to travel, built
+              with Next.js, Firebase, and Tailwind CSS
+            </p>
+            <div className="pro-card-row2">
+              <p className="pro-programs">Next.js</p>
+              <p className="pro-programs">Tailwind CSS</p>
+              <p className="pro-programs">Firebase</p>
+            </div>
+          </div>
+          <div className="pro-card">
+            <div className="pro-card-row">
+              <img src={img4} className="bx-folder" alt="" />
+              <div className="pro-card-icons">
+                <i class="progra cursor bx bxl-github"></i>
+                <i class="progra cursor bx bx-link-external"></i>
+              </div>
+            </div>
+            <h2 className="pro-card-title">
+              Building a Headless Mobile App CMS From Scratch
+            </h2>
+            <p className="pro-card-text">
+              Find out how we built a custom headless CMS with Node, Express,
+              and Firebase for a project at Apinline
+            </p>
+            <div className="pro-card-row2">
+              <p className="pro-programs">Node</p>
+              <p className="pro-programs">Express</p>
+              <p className="pro-programs">Firebase</p>
+              <p className="pro-programs">Vue</p>
+            </div>
+          </div>
+          <div className="pro-card">
+            <div className="pro-card-row">
+              <img src={img4} className="bx-folder" alt="" />
+              <div className="pro-card-icons">
+                <i class="progra cursor bx bxl-github"></i>
+                <i class="progra cursor bx bx-link-external"></i>
+              </div>
+            </div>
+            <h2 className="pro-card-title">OctoProfile</h2>
+            <p className="pro-card-text">
+              A nicer look at your GitHub profile and repo stats. Includes data
+              visualizations of your top languages, starred repositories, and
+              sort through your top repos by number of stars, forks, and size.
+            </p>
+            <div className="pro-card-row2">
+              <p className="pro-programs">Next.js</p>
+              <p className="pro-programs">Chart.js</p>
+              <p className="pro-programs">GitHub API</p>
+            </div>
+          </div>
+          <div className="pro-card">
+            <div className="pro-card-row">
+              <img src={img4} className="bx-folder" alt="" />
+              <div className="pro-card-icons">
+                <i class="progra cursor bx bxl-github"></i>
+                <i class="progra cursor bx bx-link-external"></i>
+              </div>
+            </div>
+            <h2 className="pro-card-title">Google Keep Clone</h2>
+            <p className="pro-card-text">
+              A simple Google Keep clone built with Vue and Firebase.
+            </p>
+            <div className="pro-card-row2">
+              <p className="pro-programs">Vue</p>
+              <p className="pro-programs">Firebase</p>
+            </div>
+          </div>
+          <div className="pro-card">
+            <div className="pro-card-row">
+              <img src={img4} className="bx-folder" alt="" />
+              <div className="pro-card-icons">
+                <i class="progra cursor bx bxl-github"></i>
+                <i class="progra cursor bx bx-link-external"></i>
+              </div>
+            </div>
+            <h2 className="pro-card-title">
+              Apple Music Embeddable Web Player Widget
+            </h2>
+            <p className="pro-card-text">
+              Embeddable web player widget for Apple Music that lets users log
+              in and listen to full song playback in the browser leveraging
+              MusicKit.js. Read more about this project on 9to5Mac.
+            </p>
+            <div className="pro-card-row2">
+              <p className="pro-programs">MusicKit.js</p>
+              <p className="pro-programs">JS</p>
+              <p className="pro-programs">SCSS</p>
+            </div>
+          </div>
+        </div>
+        <button className="green-btn tac mt50">Sow more</button>
+      </div>
+      <div className="contact container">
+        <h2 className="con-title green tac">
+          <span>04.</span> What’s Next?
+        </h2>
+        <h2 className="con-subtitle">Get In Touch</h2>
+        <p className="con-text tac texts">
+          Although I’m not currently looking for any new opportunities, my inbox
+          is always open. Whether you have a question or just want to say hi,
+          I’ll try my best to get back to you!
+        </p>
+        <button className=" tac mt50 green-btn">Say Hello</button>
+      </div>
+      <div className="footer container">
+        <p className="foot-text tac mb30 texts font-mono">
+          Designed & Built by Fozilov Saidjon
+        </p>
       </div>
     </div>
   );
