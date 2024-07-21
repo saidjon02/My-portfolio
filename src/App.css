@@ -803,7 +803,7 @@ h6 {
   .pro-title.fz35 {
     font-size: 30px;
   }
-  .pro-row + .green-btn{
+  .pro-row + .green-btn {
     margin-top: 50px;
     font-size: var(--fz-sm);
   }
@@ -819,6 +819,20 @@ h6 {
   }
 }
 @media only screen and (max-width: 434px) {
+  .about-right img {
+    width: 100%;
+  }
+
+  .work-row {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .programs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+  }
   .about-right img {
     width: 100%;
   }
