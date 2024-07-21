@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import right from "../../imgs/right.png";
 import img from "../../imgs/aImg.png";
@@ -10,28 +10,10 @@ import img4 from "../../imgs/img4.png";
 import "./app.js";
 
 function Home() {
-  // let post11 = document.querySelector(".post1");
-  // let post22 = document.querySelector(".post2");
-  // let post33 = document.querySelector(".post3");
-  // let post44 = document.querySelector(".post4");
-  // let post55 = document.querySelector(".post5");
-  // const post1 = () => {
-  //   post11.style.opacity = 1;
-  //   post22.style.opacity = 0;
-  //   post33.style.opacity = 0;
-  //   post44.style.opacity = 0;
-  //   post55.style.opacity = 0;
-  // };
-  // const post2 = () => {
-  //   post11.style.opacity = 0;
-  //   post22.style.opacity = 1;
-  //   post33.style.opacity = 0;
-  //   post44.style.opacity = 0;
-  //   post55.style.opacity = 0;
-  // };
-  // const post3 = () => {};
-  // const post4 = () => {};
-  // const post5 = () => {};
+  const [toggle, setToggle] = useState(1);
+  const toggleTab = (index) => {
+    setToggle(index);
+  };
   return (
     <div className="wrap">
       <div className="home container">
@@ -111,29 +93,53 @@ function Home() {
         </h1>
         <div className="work-row">
           <div className="work-left">
-            <h2 className="work-left-title active-work">
+            <h2
+              className={
+                toggle === 1
+                  ? "work-left-title active-work active-work"
+                  : "work-left-title"
+              }
+              onClick={() => toggleTab(1)}
+            >
               Apinline
-              {/* onClick={post1()} */}
             </h2>
-            <h2 className="work-left-title">
+            <h2
+              className={
+                toggle === 2 ? "work-left-title active-work" : "work-left-title"
+              }
+              onClick={() => toggleTab(2)}
+            >
               Apple
-              {/* onClick={post2()} */}
             </h2>
-            <h2 className="work-left-title">
+            <h2
+              className={
+                toggle === 3 ? "work-left-title active-work" : "work-left-title"
+              }
+              onClick={() => toggleTab(3)}
+            >
               Scout Studio
-              {/* onClick={post3()} */}
             </h2>
-            <h2 className="work-left-title">
+            <h2
+              className={
+                toggle === 4 ? "work-left-title active-work" : "work-left-title"
+              }
+              onClick={() => toggleTab(4)}
+            >
               Starry
-              {/* onClick={post4()} */}
             </h2>
-            <h2 className="work-left-title">
+            <h2
+              className={
+                toggle === 5 ? "work-left-title active-work" : "work-left-title"
+              }
+              onClick={() => toggleTab(5)}
+            >
               MullenLowe
-              {/* onClick={post5()} */}
             </h2>
           </div>
           <div className="work-right">
-            <div className="post1">
+            <div
+              className={toggle === 1 ? "post1 active-contant" : "post1 posts"}
+            >
               <h2 className="work-right-title">
                 Lead Engineer <span className="green">@ Apinline</span>
               </h2>
@@ -151,19 +157,10 @@ function Home() {
                 development, and architecture of technical solutions to fulfill
                 business requirements
               </p>
-              <p className="texts mb20">
-                <img src={right} className="imgs-right" alt="" />
-                Collaborate with designers, project managers, and other
-                engineers to transform creative concepts into production
-                realities for clients and stakeholders
-              </p>
-              <p className="texts mb20">
-                <img src={right} className="imgs-right" alt="" />
-                Provide leadership within engineering department through close
-                collaboration, knowledge shares, and mentorship
-              </p>
             </div>
-            <div className="post2 posts">
+            <div
+              className={toggle === 2 ? "post1 active-contant" : "post1 posts"}
+            >
               <h2 className="work-right-title">
                 UI Engineer Co-op <span className="green"> @ Apple</span>
               </h2>
@@ -184,14 +181,10 @@ function Home() {
                 embeddable web player widget for in-browser user authorization
                 and full song playback
               </p>
-              <p className="texts">
-                <img src={right} className="imgs-right" alt="" />
-                Contributed extensively to the creation of MusicKit JS, a
-                public-facing JavaScript SDK for embedding Apple Music players
-                into web applications
-              </p>
             </div>
-            <div className="post3 posts">
+            <div
+              className={toggle === 3 ? "post1 active-contant" : "post1 posts"}
+            >
               <h2 className="work-right-title">
                 Developer
                 <span className="green"> @ Scout Studio</span>
@@ -209,7 +202,9 @@ function Home() {
                 business requirements
               </p>
             </div>
-            <div className="post4 posts">
+            <div
+              className={toggle === 4 ? "post1 active-contant" : "post1 posts"}
+            >
               <h2 className="work-right-title">
                 Software Engineer Co-op
                 <span className="green"> @ Starry</span>
@@ -234,7 +229,9 @@ function Home() {
                 and Android mobile apps
               </p>
             </div>
-            <div className="post5 posts">
+            <div
+              className={toggle === 5 ? "post1 active-contant" : "post1 posts"}
+            >
               <h2 className="work-right-title">
                 Creative Technologist Co-op
                 <span className="green"> @ MullenLowe</span>
@@ -275,7 +272,6 @@ function Home() {
                 A minimal, dark blue theme for VS Code, Sublime Text, Atom,
                 iTerm, and more. Available on
                 <span className="green">
-                  
                   Visual Studio Marketplace, Control, Atom Package Manager,
                 </span>
                 Package and <span className="green"> npm.</span>
@@ -284,9 +280,6 @@ function Home() {
             <div className="programs">
               <p className="b-text">VS Code</p>
               <p className="b-text">Sublime Text</p>
-              <p className="b-text">Atom</p>
-              <p className="b-text">iTerm2</p>
-              <p className="b-text">Hyper</p>
             </div>
             <div className="b-box-icon">
               <i class="progra cursor bx bxl-github"></i>
@@ -313,8 +306,6 @@ function Home() {
               <p className="b-text">React</p>
               <p className="b-text">Styled Components</p>
               <p className="b-text">Express</p>
-              <p className="b-text dn">Spotify API</p>
-              <p className="b-text dn">Heroku</p>
             </div>
             <div className="b-box-icon2">
               <i class="progra cursor bx bxl-github"></i>
@@ -326,7 +317,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="built container">
+      <div className="built eng container">
         <div className="b-row">
           <div className="b-left">
             <img src={img3} alt="" />
@@ -339,15 +330,19 @@ function Home() {
                 Having struggled with understanding how the Spotify OAuth flow
                 works, I made the course I wish I could have had. Unlike
                 tutorials that only cover a few concepts and leave you with
-                half-baked GitHub repositories. <span className="dn"> This course covers everything
-                from explaining the principles of REST APIs to implementing
-                Spotify's OAuth flow and fetching API data in a React app.  By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio. </span>
+                half-baked GitHub repositories.{" "}
+                <span className="dn">
+                  {" "}
+                  This course covers everything from explaining the principles
+                  of REST APIs to implementing Spotify's OAuth flow and fetching
+                  API data in a React app. By the end of the course, you’ll have
+                  an app deployed to the internet you can add to your portfolio.{" "}
+                </span>
               </p>
             </div>
             <div className="programs">
-              <p className="b-text">Reactt</p>
+              <p className="b-text">React</p>
               <p className="b-text">Express</p>
-              <p className="b-text">Spotify API</p>
               <p className="b-text">Styled Components</p>
             </div>
             <div className="b-box-icon">
