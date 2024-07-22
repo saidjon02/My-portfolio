@@ -9,33 +9,35 @@ function Header() {
   };
   return (
     <div className="header container-h font">
-      <img className="logo" src={logo} alt="" />
+      <a href="#home">
+        <img className="logo" src={logo} alt="" />
+      </a>
       <nav className={pop ? "nav nav-active" : "nav"}>
         <nav className="nav">
           <div className="nav2">
             <ul>
               <li>
-                <Link className="head-link">
+                <a href="#about" className="head-link">
                   <span className="green">01. </span>About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="head-link">
+                <a href="#experience" className="head-link">
                   <span className="green">02. </span>Experience
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="head-link">
+                <a href="#work" className="head-link">
                   <span className="green">03. </span>Work
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="head-link">
+                <a href="#contact" className="head-link">
                   <span className="green">04. </span>Contact
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="head-link"></Link>
+                <a href="#" className="head-link"></a>
               </li>
             </ul>
             <button className="green-btn">Resume</button>
