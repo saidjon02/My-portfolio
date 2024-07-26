@@ -101,17 +101,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.h100 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-}
 
-.h100 > * {
-  margin: 0;
-  padding: 0;
-}
 .menu {
   display: none;
 }

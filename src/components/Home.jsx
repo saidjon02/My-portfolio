@@ -16,11 +16,7 @@ function Home() {
   };
   return (
     <div className="wrap">
-<<<<<<< HEAD
-      <div className="h100 home" id="home">
-=======
       <div className="h100" id="home">
->>>>>>> a3fad0b4afcd40160cafd8ba2cba4cabb1618f25
         <div className="home container">
           <h2 className="home-title font">Hi, my name is</h2>
           <h2 className="home-subtitle">
@@ -285,11 +281,7 @@ function Home() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       <div className="h1000" id="work">
-=======
-      <div className="h100" id="work">
->>>>>>> a3fad0b4afcd40160cafd8ba2cba4cabb1618f25
         <div className="built container">
           <h1 className="about-title">
             <span className="green font">03. </span> Some Things I’ve Built
@@ -322,11 +314,6 @@ function Home() {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-=======
-      </div>
-      <div className="h100">
->>>>>>> a3fad0b4afcd40160cafd8ba2cba4cabb1618f25
         <div className="built container">
           <div className="b-row">
             <div className="b-right ral">
@@ -356,11 +343,6 @@ function Home() {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-=======
-      </div>
-      <div className="h100">
->>>>>>> a3fad0b4afcd40160cafd8ba2cba4cabb1618f25
         <div className="built eng container">
           <div className="b-row">
             <div className="b-left">
