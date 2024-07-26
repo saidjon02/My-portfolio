@@ -101,26 +101,13 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.h100 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-}
-
-.h100 > * {
-  margin: 0;
-  padding: 0;
-}
-.h1000{
-  height: 110vh;
-}
 .menu {
   display: none;
 }
 .green {
   color: #64ffda;
 }
+
 .header {
   z-index: 99999999999999999999999;
 }
@@ -154,9 +141,7 @@ html {
   box-shadow: 5px 5px 0 #64ffda;
   transform: translatex(-5px) translateY(-5px);
 }
-.home {
-  margin-top: 60px;
-}
+
 .texts {
 }
 .container {
@@ -319,6 +304,7 @@ html {
   margin: auto;
 }
 .work {
+  margin-top: 200px;
   margin-bottom: 230px;
 }
 .work-row {
@@ -513,7 +499,7 @@ h6 {
 /* pro */
 
 .pro {
-  margin-top: 200px;
+  margin-top: 90px;
 }
 .pro-row {
   display: grid;
@@ -628,6 +614,20 @@ h6 {
 }
 .mt50 {
 }
+@media only screen and (max-width: 2209px) {
+  .home {
+    margin-top: 150px;
+  }
+  .pro {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 1560px) {
+  .home {
+    margin-top: 80px;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .container-h,
   .home .container,
@@ -637,11 +637,17 @@ h6 {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .b-card{
+    width: 100%;
+  }
   .icons-left {
     left: 5px;
   }
   .icons-right {
     right: 5px;
+  }
+  .home {
+    margin-top: 70px;
   }
   .b-left::before {
     content: "";
@@ -695,10 +701,6 @@ h6 {
   .about {
     margin-top: 94px !important;
     margin-bottom: 116px !important;
-  }
-  .h100{
-    height: auto;
-    margin-bottom: 150px;
   }
   .container-h,
   .home .container,
@@ -830,6 +832,9 @@ h6 {
   }
   .eng {
     margin-top: 20px;
+  }
+  .home {
+    margin-top: 40px;
   }
   .pro-title.fz35 {
     font-size: 30px;

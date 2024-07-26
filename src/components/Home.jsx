@@ -16,7 +16,7 @@ function Home() {
   };
   return (
     <div className="wrap">
-      <div className="h100" id="home">
+      <div className="h100 home" id="home">
         <div className="home container">
           <h2 className="home-title font">Hi, my name is</h2>
           <h2 className="home-subtitle">
