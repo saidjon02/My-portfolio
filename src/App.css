@@ -641,7 +641,9 @@ h6 {
   font-size: 22px;
   margin-left: 10px;
 }
-
+.home{
+  position: relative;
+}
 .pro .green-btn,
 .contact .green-btn {
   margin: auto;

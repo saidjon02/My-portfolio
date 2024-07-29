@@ -15,6 +15,8 @@ function Home() {
   const toggleTab = (index) => {
     setToggle(index);
   };
+  let home = ".home";
+  console.log(home)
   const comp = useRef(null);
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -37,7 +39,8 @@ function Home() {
           zIndex: 0,
           duration: 0.5,
           opacity: 1,
-        });
+        })
+        .to(home, { opacity: 0, x: 200 });
     }, comp);
     return () => ctx.revert();
   }, []);
@@ -54,7 +57,9 @@ function Home() {
       <div id="opac">
         <div className="h100" id="home">
           <div className="home container">
-            <h2 className="home-title font">Hi, my name is</h2>
+            <h2 className="home-title font" id="hello">
+              Hi, my name is
+            </h2>
             <h2 className="home-subtitle">
               Fozilov Saidjon.
               <span className="opas">I build things for the web.</span>
