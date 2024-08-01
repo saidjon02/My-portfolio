@@ -16,31 +16,31 @@ function Home() {
     setToggle(index);
   };
   let home = ".home";
-  console.log(home)
+  console.log(home);
   const comp = useRef(null);
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline();
-      t1.from(["#t1", "#t2", "#t3", "#t4"], {
-        duration: 0.7,
-        opacity: 0,
-        y: "-=50",
-        delay: 1,
-        stagger: 0.4,
-      })
-        .to("#intro-slider", {
-          translateY: -3000,
-          duration: 2.3,
-          zIndex: 0,
-          delay: 1,
-        })
+      // t1.from(["#t1", "#t2", "#t3", "#t4"], {
+      //   duration: 0.7,
+      //   opacity: 0,
+      //   y: "-=50",
+      //   delay: 1,
+      //   stagger: 0.4,
+      // })
+      //   .to("#intro-slider", {
+      //     translateY: -3000,
+      //     duration: 2.3,
+      //     zIndex: 0,
+      //     delay: 1,
+      //   })
 
-        .to("#opac", {
-          zIndex: 0,
-          duration: 0.5,
-          opacity: 1,
-        })
-        .to(home, { opacity: 0, x: 200 });
+      //   .to("#opac", {
+      //     zIndex: 0,
+      //     duration: 0.5,
+      //     opacity: 1,
+      //   })
+      //   .to(home, { opacity: 0, x: 200 });
     }, comp);
     return () => ctx.revert();
   }, []);
@@ -57,14 +57,27 @@ function Home() {
       <div id="opac">
         <div className="h100" id="home">
           <div className="home container">
-            <h2 className="home-title font" id="hello">
+            <h2
+              className="home-title font t1"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              id="hello"
+            >
               Hi, my name is
             </h2>
-            <h2 className="home-subtitle">
+            <h2
+              className="home-subtitle t2"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               Fozilov Saidjon.
               <span className="opas">I build things for the web.</span>
             </h2>
-            <p className="home-text">
+            <p
+              className="home-text t3"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               I'm a software engineer who specializes in building (and sometimes
               designing) awesome websites. I am currently focusing on creating
               human centric products available on
@@ -72,14 +85,25 @@ function Home() {
                 <span className="green"> APINLINE.</span>
               </Link>
             </p>
-            <Link to={"https://www.apinline.com/"} target="_blanck">
-              <button className="green-btn home-btn">
-                Check out my course!
-              </button>
-            </Link>
+            <div
+              className="data t4"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
+              <Link to={"https://www.apinline.com/"} target="_blanck">
+                <button className="green-btn home-btn">
+                  Check out my course!
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="h100" id="about">
+        <div
+          className="h100 t2"
+          data-aos-duration="1500"
+          data-aos="zoom-in"
+          id="about"
+        >
           <div className="about container-a">
             <h1 className="about-title">
               <span className="green font">01. </span> About Me
@@ -135,7 +159,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="h100" id="experience">
+        <div
+          className="h100 t2"
+          data-aos-duration="1500"
+          data-aos="zoom-in-right"
+          id="experience"
+        >
           <div className="work container-w">
             <h1 className="about-title">
               <span className="green font">02. </span> Where I’ve Worked
@@ -328,14 +357,26 @@ function Home() {
         </div>
         <div className="h1000" id="work">
           <div className="built container">
-            <h1 className="about-title">
+            <h1
+              className="about-title t2"
+              data-aos-duration="1400"
+              data-aos="fade-down"
+            >
               <span className="green font">03. </span> Some Things I’ve Built
             </h1>
             <div className="b-row">
-              <div className="b-left bg">
+              <div
+                className="b-left bg t3"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+              >
                 <img src={img1} alt="" />
               </div>
-              <div className="b-right">
+              <div
+                className="b-right t4"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+              >
                 <h2 className="b-title">Featured Project</h2>
                 <h2 className="b-subtitle">Halcyon Theme</h2>
                 <div className="b-card">
@@ -361,7 +402,11 @@ function Home() {
           </div>
           <div className="built container">
             <div className="b-row">
-              <div className="b-right ral">
+              <div
+                className="b-right ral t3"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+              >
                 <h2 className="b-title">Featured Project</h2>
                 <h2 className="b-subtitle">Spotify Profile</h2>
                 <div className="b-card">
@@ -383,17 +428,29 @@ function Home() {
                   <i class="progra cursor bx bx-link-external"></i>
                 </div>
               </div>
-              <div className="b-left bg">
+              <div
+                className="b-left bg t4"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+              >
                 <img src={img2} alt="" />
               </div>
             </div>
           </div>
           <div className="built eng container">
             <div className="b-row">
-              <div className="b-left">
+              <div
+                className="b-left t3"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+              >
                 <img src={img3} alt="" />
               </div>
-              <div className="b-right">
+              <div
+                className="b-right t4"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+              >
                 <h2 className="b-title">Featured Project</h2>
                 <h2 className="b-subtitle">Build a Spotify Connected App</h2>
                 <div className="b-card">
@@ -426,9 +483,25 @@ function Home() {
           </div>
         </div>
         <div className="pro container">
-          <h2 className="pro-title tac fz35">Other Noteworthy Projects</h2>
-          <p className="tac green">view the archive</p>
-          <div className="pro-row mt50">
+          <h2
+            className="pro-title tac fz35 t2"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+          >
+            Other Noteworthy Projects
+          </h2>
+          <p
+            className="tac green t3"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+          >
+            view the archive
+          </p>
+          <div
+            className="pro-row mt50 t4"
+            data-aos="flip-up"
+            data-aos-duration="1400"
+          >
             <Link
               to={"https://saidjon01.netlify.app"}
               className="pro-link"
@@ -582,16 +655,36 @@ function Home() {
           </div>
         </div>
         <div className="contact container" id="contact">
-          <h2 className="con-title green tac">
+          <h2
+            className="con-title green tac t1"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+          >
             <span>04.</span> What’s Next?
           </h2>
-          <h2 className="con-subtitle">Get In Touch</h2>
-          <p className="con-text tac texts">
+          <h2
+            className="con-subtitle t2"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+          >
+            Get In Touch
+          </h2>
+          <p
+            className="con-text tac texts t3"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+          >
             Although I’m not currently looking for any new opportunities, my
             inbox is always open. Whether you have a question or just want to
             say hi, I’ll try my best to get back to you!
           </p>
-          <button className=" tac mt50 green-btn">Say Hello</button>
+          <div
+            className="data t4"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+          >
+            <button className=" tac mt50 green-btn">Say Hello</button>
+          </div>
         </div>
 
         <div className="footer container">
