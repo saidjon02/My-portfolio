@@ -499,7 +499,7 @@ function Home() {
           </p>
           <div
             className="pro-row mt50 t4"
-            data-aos="flip-up"
+            data-aos="fade-down"
             data-aos-duration="1400"
           >
             <Link
