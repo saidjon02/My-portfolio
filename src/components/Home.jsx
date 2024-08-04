@@ -8,8 +8,8 @@ import img3 from "../../imgs/hero 1 (1).png";
 import img4 from "../../imgs/img4.png";
 import gsap from "gsap";
 import "./app.js";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Home() {
   const [toggle, setToggle] = useState(1);
   const toggleTab = (index) => {
@@ -21,26 +21,26 @@ function Home() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline();
-      // t1.from(["#t1", "#t2", "#t3", "#t4"], {
-      //   duration: 0.7,
-      //   opacity: 0,
-      //   y: "-=50",
-      //   delay: 1,
-      //   stagger: 0.4,
-      // })
-      //   .to("#intro-slider", {
-      //     translateY: -3000,
-      //     duration: 2.3,
-      //     zIndex: 0,
-      //     delay: 1,
-      //   })
+      t1.from(["#t1", "#t2", "#t3", "#t4"], {
+        duration: 0.7,
+        opacity: 0,
+        y: "-=50",
+        delay: 1,
+        stagger: 0.4,
+      })
+        .to("#intro-slider", {
+          translateY: -3000,
+          duration: 2.3,
+          zIndex: 0,
+          delay: 1,
+        })
 
-      //   .to("#opac", {
-      //     zIndex: 0,
-      //     duration: 0.5,
-      //     opacity: 1,
-      //   })
-      //   .to(home, { opacity: 0, x: 200 });
+        .to("#opac", {
+          zIndex: 0,
+          duration: 0.5,
+          opacity: 1,
+        })
+        .to(home, { opacity: 0, x: 200 });
     }, comp);
     return () => ctx.revert();
   }, []);

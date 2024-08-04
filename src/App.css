@@ -20,8 +20,17 @@
 .app-title span {
   font-family: "syne" !important;
 }
-#dfff{
-  display: none;
+.home .t1 {
+  transition-delay: 4.4s;
+}
+.home .t2 {
+  transition-delay: 4.7s;
+}
+.home .t3 {
+  transition-delay: 5s;
+}
+.home .t4 {
+  transition-delay: 5.3s;
 }
 #intro-slider {
   background-color: #0a192f;
@@ -37,22 +46,22 @@
   bottom: 0;
 }
 
-.t1{
+.t1 {
   transition-delay: 0.3s;
 }
-.t2{
+.t2 {
   transition-delay: 0.6s;
 }
-.t3{
+.t3 {
   transition-delay: 0.9s;
 }
-.t4{
+.t4 {
   transition-delay: 1.2s;
 }
-.t5{
+.t5 {
   transition-delay: 1.5s;
 }
-.t6{
+.t6 {
   transition-delay: 1.8s;
 }
 
@@ -649,7 +658,7 @@ h6 {
   font-size: 22px;
   margin-left: 10px;
 }
-.home{
+.home {
   position: relative;
 }
 .pro .green-btn,
