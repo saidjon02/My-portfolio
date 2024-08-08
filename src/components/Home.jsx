@@ -7,7 +7,6 @@ import img2 from "../../imgs/img3.png";
 import img3 from "../../imgs/hero 1 (1).png";
 import img4 from "../../imgs/img4.png";
 import gsap from "gsap";
-import "./app.js";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
