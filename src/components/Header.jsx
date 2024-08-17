@@ -9,9 +9,9 @@ function Header() {
   };
   return (
     <div className="header container-h font">
-      <a href="#home">
+      <Link to="/">
         <img className="logo" src={logo} alt="" />
-      </a>
+      </Link>
       <nav className={pop ? "nav nav-active" : "nav"}>
         <div className="nav2">
           <ul>
@@ -39,15 +39,17 @@ function Header() {
               <a href="#" className="head-link"></a>
             </li>
           </ul>
-          <button className="green-btn">Resume</button>
+          <Link to={"resume"}>
+            <button className="green-btn">Resume</button>
+          </Link>
         </div>
-          <box-icon
-            name="x"
-            className="hello"
-            size={"md"}
-            color="white"
-            onClick={fire}
-          ></box-icon>
+        <box-icon
+          name="x"
+          className="hello"
+          size={"md"}
+          color="white"
+          onClick={fire}
+        ></box-icon>
       </nav>
       <box-icon
         name="menu"

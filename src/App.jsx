@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   useEffect(() => {
@@ -18,7 +20,8 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-
+          <Route path="contact" element={<Contact />} />
+          <Route path="resume" element={<Resume />} />
         </Routes>
       </BrowserRouter>
 

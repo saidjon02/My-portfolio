@@ -243,10 +243,75 @@ html {
   transform: translatex(-5px) translateY(-5px);
 }
 
-.texts {
+.con-row {
+  max-width: 800px;
+  margin: auto;
 }
-.container {
+.inp-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
 }
+.con-inp {
+  margin-bottom: 20px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.211);
+  outline: none;
+  color: #ffffff;
+  border: 1px solid var(--green-tint);
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+.con-inp::placeholder {
+  color: white;
+}
+textarea {
+  height: 250px;
+}
+.send {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.send:hover{
+  background-color: var(--green);
+  color: black;
+}
+/* Basic Input Style
+.con-inp {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.con-inp:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+.con-inp::placeholder {
+  color: #888;
+  font-style: italic;
+} */
+
 .home-title {
   color: var(--green);
   font-family: var(--font-mono);
@@ -628,6 +693,30 @@ h6 {
   font-size: var(--fz-xl);
   line-height: 140%;
 }
+.resume {
+  margin-top: 100px;
+  max-width: 1200px;
+  margin: auto;
+}
+.resume-row {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.resume-left {
+}
+.resume-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.resume-text {
+  color: #8892b0;
+  line-height: 150%;
+  font-size: 18px;
+}
+.resume-right {
+}
 .pro-card-text {
   margin-bottom: 20px;
   line-height: 140%;
@@ -950,6 +1039,19 @@ h6 {
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
     align-items: center;
+  }
+  .contact-title{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .con-inp{
+    font-size: 17px;
+  }
+  .inp-row{
+    display: block;
+  }
+  .Contact{
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 434px) {

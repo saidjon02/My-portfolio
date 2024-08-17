@@ -7,7 +7,7 @@ import img2 from "../../imgs/img3.png";
 import img3 from "../../imgs/hero 1 (1).png";
 import img4 from "../../imgs/img4.png";
 import gsap from "gsap";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
@@ -52,6 +52,7 @@ function Home() {
           name="Dasturchi, Programmar, Saidjon, Fozilov, Saidjon Fozilov"
           content="Hello, my name is Saidjon, I am interested in programming. I have been in the programming industry since 2021."
         />
+        <link rel="canonical" href="/" />
       </Helmet>
       <div id="dfff" ref={comp}>
         <h2 className="app-title" id="intro-slider">
@@ -690,7 +691,9 @@ function Home() {
             data-aos="fade-down"
             data-aos-duration="1400"
           >
-            <button className=" tac mt50 green-btn">Say Hello</button>
+            <Link to={"contact"}>
+              <button className=" tac mt50 green-btn">Say Hello</button>
+            </Link>
           </div>
         </div>
 
