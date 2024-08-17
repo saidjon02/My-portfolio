@@ -1,12 +1,13 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import right from "../../imgs/right.png";
-import img from "../../imgs/aImg.png";
+import img from "../../imgs/Saidjon.jpg";
 import img1 from "../../imgs/halcyon.avif";
 import img2 from "../../imgs/img3.png";
 import img3 from "../../imgs/hero 1 (1).png";
 import img4 from "../../imgs/img4.png";
 import gsap from "gsap";
+import { Helmet } from "react-helmet";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
@@ -45,6 +46,13 @@ function Home() {
   }, []);
   return (
     <div className="wrap">
+      <Helmet>
+        <title>Saidjon / Home</title>
+        <meta
+          name="Dasturchi, Programmar, Saidjon, Fozilov, Saidjon Fozilov"
+          content="Hello, my name is Saidjon, I am interested in programming. I have been in the programming industry since 2021."
+        />
+      </Helmet>
       <div id="dfff" ref={comp}>
         <h2 className="app-title" id="intro-slider">
           <span id="t1">Welcome </span>
@@ -502,7 +510,7 @@ function Home() {
             data-aos-duration="1400"
           >
             <Link
-              to={"https://saidjon01.netlify.app"}
+              to={"https://saidjon02.netlify.app"}
               className="pro-link"
               target="_blanck"
             >
