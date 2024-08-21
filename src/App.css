@@ -526,6 +526,9 @@ textarea {
 .posts {
   display: none;
 }
+.b-right{
+  z-index: 9999;
+}
 .active-contant {
   display: block;
 }
@@ -675,15 +678,14 @@ h6 {
   border-radius: 10px;
 }
 .pro-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 }
+
 .pro-card-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
-}
-.pro-card-icons {
 }
 .pro-card-title {
   margin-top: 35px;
@@ -745,6 +747,9 @@ h6 {
 .pro-card .bx-link-external {
   font-size: 22px;
   margin-left: 10px;
+}
+.bx-folder{
+  transition: 0.5s;
 }
 .home {
   position: relative;
