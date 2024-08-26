@@ -47,7 +47,7 @@ function Home() {
   return (
     <div className="wrap">
       <Helmet>
-        <title>Saidjon</title>
+        <title>Fozilov Saidjon.</title>
         <meta
           name="Dasturchi, Programmar, Saidjon, Fozilov, Saidjon Fozilov"
           content="Hello, my name is Saidjon, I am interested in programming. I have been in the programming industry since 2021."
