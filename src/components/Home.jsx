@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import right from "../../imgs/right.png";
-import img from "../../imgs/Saidjon.jpg";
+import img from "../../imgs/myimg.jpg";
 import img1 from "../../imgs/halcyon.avif";
 import img2 from "../../imgs/img3.png";
 import img3 from "../../imgs/hero 1 (1).png";
@@ -113,11 +113,12 @@ function Home() {
           id="about"
         >
           <div className="about container-a">
-            <h1 className="about-title">
-              <span className="green font">01. </span> About Me
-            </h1>
             <div className="about-row">
               <div className="about-left">
+                {" "}
+                <h1 className="about-title">
+                  <span className="green font">01. </span> About Me
+                </h1>
                 <p className="texts mt">
                   Hello there! My name is Saidjon, I like to create websites. My
                   interest in programming started in 2020. I am working in
