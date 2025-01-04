@@ -356,11 +356,13 @@ textarea {
   writing-mode: vertical-rl;
   margin-bottom: 30px;
   transition: 0.3s ease-in-out;
+  color: #8892B0;
   font-size: 20px;
 }
 .arrow-text:hover {
   cursor: pointer;
   color: #64ffda;
+
   transform: translateY(-5px);
 }
 .icons-left {

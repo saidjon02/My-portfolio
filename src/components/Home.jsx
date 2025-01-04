@@ -79,7 +79,7 @@ function Home() {
               data-aos-duration="1500"
             >
               Fozilov Saidjon.
-              <span className="opas">I build things for the web.</span>
+              <span className="opas">I create various websites</span>
             </h2>
             <p
               className="home-text t3"
@@ -701,6 +701,9 @@ function Home() {
         <div className="footer container">
           <p className="foot-text tac mb30 texts font-mono">
             Designed & Built by Fozilov Saidjon
+          </p>
+          <p className="foot-text tac mb30 texts font-mono">
+            If you need site my phone number is: <Link to={"tel:+998948377008"} className="green">+998 94 837 7008</Link> 
           </p>
         </div>
       </div>
